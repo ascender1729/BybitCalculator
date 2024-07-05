@@ -1,111 +1,109 @@
+
 # ByBit Inverse BTCUSD Perpetual Calculator
 
+Developed by Pavan Kumar, this Ruby-based application assists cryptocurrency traders in managing and calculating risks associated with ByBit's Inverse BTCUSD Perpetual contracts. It features various calculators and a user-friendly interface implemented with Tk and Ruby gems.
+
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Project Structure](#project-structure)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Project Overview
 
-The ByBit Inverse BTCUSD Perpetual Calculator is a Ruby-based desktop application that provides tools for cryptocurrency traders using ByBit's Inverse BTCUSD Perpetual contracts. It offers calculations for inverse perpetual contracts, averaging down strategies, and strategy comparisons to help traders make informed decisions.
+This desktop application is designed to help traders make informed decisions by providing detailed calculations for strategies such as averaging down and comparing different margin strategies.
 
 ## Features
 
-1. **Inverse Perpetual Calculator**: 
-   - Calculate liquidation price, bankruptcy price, and other key metrics
-   - Support for both isolated and cross margin
-   - Long and short position calculations
+- **Inverse Perpetual Calculator**: Compute liquidation and bankruptcy prices, and other metrics for both long and short positions.
+- **Averaging Down Calculator**: Helps plan additional purchases as the BTC price declines, providing new average entry prices.
+- **Strategy Comparison**: Allows comparison between different trading strategies like Isolated Margin and Cross Margin.
 
-2. **Averaging Down Calculator**:
-   - Plan additional purchases as BTC price declines
-   - Calculate average entry price and total BTC acquired
+## Technologies Used
 
-3. **Strategy Comparison**:
-   - Compare Averaging Down, Isolated Margin, and Cross Margin strategies
-   - Determine the best approach for lowering liquidation price while maximizing available funds
-
-4. **User-Friendly GUI**:
-   - Built with Tk for a native look and feel
-   - Tabbed interface for easy navigation between calculators
+- **Programming Language**: Ruby
+- **GUI Toolkit**: Tk
+- **Ruby Gems**:
+  - `tk` - For the GUI components.
+  - `terminal-table` - To display tabular data in the terminal.
+  - `minitest` - For running unit tests on the application.
 
 ## Project Structure
 
 ```
-bybit_calculator/
+BybitCalculator/
 │
 ├── assets/
 │   └── cal.ico
 │
 ├── lib/
 │   ├── calculators/
-│   │   ├── bybit_calculator.rb
 │   │   ├── averaging_down.rb
+│   │   ├── bybit_calculator.rb
 │   │   └── strategy_comparison.rb
 │   ├── gui/
+│   │   ├── averaging_down_tab.rb
+│   │   ├── inverse_perpetual_tab.rb
+│   │   └── strategy_comparison_tab.rb
 │   │   └── main_window.rb
 │   └── utilities/
 │       └── formatter.rb
 │
 ├── test/
-│   └── calculator_test.rb
+│   ├── calculator_test.rb
+│   └── icon_test.rb
 │
 ├── app.rb
 ├── Gemfile
 ├── Gemfile.lock
+├── LICENSE
 └── README.md
 ```
 
 ## Installation
 
-1. Ensure you have Ruby installed on your system (version 2.7.0 or higher recommended).
-2. Clone this repository:
+Ensure Ruby is installed on your system (Ruby 2.7+ recommended):
+1. Clone the repository:
    ```
    git clone https://github.com/ascender1729/BybitCalculator.git
    cd BybitCalculator
    ```
-3. Install the required gems:
+2. Install required Ruby gems:
    ```
    bundle install
    ```
 
 ## Usage
 
-To run the application:
-
+To launch the application:
 ```
 ruby app.rb
 ```
-
-The application window will open with three tabs:
-
-1. **Inverse Perpetual**: Enter your position details to calculate liquidation price and other metrics.
-2. **Averaging Down**: Plan your averaging down strategy by entering your budget and target prices.
-3. **Strategy Comparison**: Compare different margin strategies by entering your account balance and price targets.
+Navigate through the tabs to access different calculators for various trading strategies.
 
 ## Contributing
 
-Contributions to the ByBit Inverse BTCUSD Perpetual Calculator are welcome! Here's how you can contribute:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please ensure your code adheres to the existing style and includes appropriate tests.
+Interested in contributing? Here's how you can help:
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is released under the MIT License. See the `LICENSE` file for details.
 
 ## Contact
 
-Your Name - your.email@example.com
+Pavan Kumar - pavankumard.pg19.ma@nitp.ac.in
+
+LinkedIn: [linkedin.com/in/im-pavankumar](https://www.linkedin.com/in/im-pavankumar/)
 
 Project Link: [https://github.com/ascender1729/BybitCalculator](https://github.com/ascender1729/BybitCalculator)
-
