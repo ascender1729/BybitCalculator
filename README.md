@@ -106,4 +106,4 @@ Pavan Kumar - pavankumard.pg19.ma@nitp.ac.in
 
 LinkedIn: [linkedin.com/in/im-pavankumar](https://www.linkedin.com/in/im-pavankumar/)
 
-Project Link: [https://github.com/ascender1729/BybitCalculator](https://github.com/ascender1729/BybitCalculator)
+Project Link: [github.com/ascender1729/BybitCalculator](https://github.com/ascender1729/BybitCalculator)
